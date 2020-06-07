@@ -1,0 +1,12 @@
+Notes for Resnet-
+
+Deep Residual Learning for Image Recognition - 2015
+
+.) With the networkdepth increasing, accuracy gets saturated (which might beunsurprising)  and  then  degrades  rapidly.
+.)In  this  paper,  we  address  the  degradation  problem  by introducing  adeep  residual  learning framework.
+.)It is worth noticing that our model hasfewerfilters andlowercomplexity than VGG nets [41] (Fig. 3, left). Our 34-layer baseline has 3.6 billion FLOPs (multiply-adds), whichis only 18% of VGG-19 (19.6 billion FLOPs)
+
+
+.)50-layer ResNet: Each 2-layer block is replaced in the 34-layer net with this 3-layer bottleneck block, resulting in a 50-layer ResNet (see above table). They use option 2 for increasing dimensions. This model has 3.8 billion FLOPs.
+
+101-layer and 152-layer ResNets: they construct 101-layer and 152-layer ResNets by using more 3-layer blocks (above table). Even after the depth is increased, the 152-layer ResNet (11.3 billion FLOPs) has lower complexity than VGG-16/19 nets (15.3/19.6 billion FLOPs)
