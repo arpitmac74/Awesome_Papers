@@ -1,0 +1,19 @@
+Notes on AlexNet(2012)-
+
+Relu nonlinearity -> f(x) = (1+e^(-x))^(-1)
+Local Response Normalization -> to enhance Relu 
+Overlapping pooling -> s<z.
+
+Architecture->
+Total layers - 8 
+Convolutional Layers - 5
+Fully Connected Layers - 3 
+1000 way softmax since 1000 classifications.
+
+Reducing Overfitting ->
+	
+	.)Data Augmentation:- Generating image translation and horizontal reflection done using patches.
+			      Second is altering the intensities of RGB channels.
+	
+	.)DropOut:- to reduce computation time.
+				
